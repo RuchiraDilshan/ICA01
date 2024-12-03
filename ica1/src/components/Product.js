@@ -18,7 +18,7 @@ export default function Product(props){
         <div className="grid-item">
 
             <div class="card">
-                <img  />
+                <img src={require(`../assets/image/${props.flower.img}`)} />
                 <div class="card-body">
                     <h5 class="card-title">Price:{props.flower.price}</h5>
                     <div class="quantity-container">
