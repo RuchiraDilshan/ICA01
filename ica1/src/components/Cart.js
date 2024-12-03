@@ -26,7 +26,7 @@ export default function Cart(props) {
                 }
                 <tr>
                     <td >Grand Total : </td>
-                    <td colSpan={2}>Grand Total</td>
+                    <td colSpan={2}>{props.gPrice}</td>
                 </tr>
             </table>
            
