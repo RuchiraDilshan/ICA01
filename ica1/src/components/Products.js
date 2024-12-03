@@ -8,6 +8,8 @@ import Cart from './Cart';
 
 
 export default function Products(){
+    const[cart,setCart]=useState([]);
+    const[grandPrice,setGrandPrice]=useState(0);
    
     return(
         <>
@@ -18,7 +20,9 @@ export default function Products(){
                 <h4 className="card-title">Buy flowers</h4>
                 <div className="grid-container">
                     {
-                        //product
+                        flowers.map((flower)=>(
+                            <Product flower={flower} setCart={setCart} setGprice={setGrandPrice} gPrice={grandPrice}/>
+                        ))
                     }
                 </div>
 
